@@ -33,13 +33,13 @@ const TranslationBox = () => {
   };
 
   const notImplemented = () => {
-      alert("Functionality Coming Soon");
-  }
+    alert("Functionality Coming Soon");
+  };
 
   return (
-    <>
+    <div className="translationBox">
       <h4>
-        Croatian Phrase: <i>{greetingsData[currentItem]["croatian"]}</i> 
+        Croatian Phrase: <i>{greetingsData[currentItem]["croatian"]}</i>
         <Badge bg="info" onClick={notImplemented} className="audioBtn">
           Audio
         </Badge>
@@ -55,11 +55,10 @@ const TranslationBox = () => {
         </Button>
       </div>
 
-      {showEnglish && (
-        <h4>
-          English Translation: <i>{greetingsData[currentItem]["english"]}</i>
-        </h4>
-      )}
+      <h4>
+        English Translation:{" "}
+        {showEnglish && <i>{greetingsData[currentItem]["english"]}</i>}
+      </h4>
 
       <div>
         <Button
@@ -70,7 +69,7 @@ const TranslationBox = () => {
           Next
         </Button>
       </div>
-    </>
+    </div>
   );
 };
 

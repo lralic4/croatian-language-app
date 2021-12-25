@@ -1,11 +1,11 @@
-import './App.css';
-import Header from './components/header/Header';
-import Stage from './components/stage/Stage';
+import "./App.css";
+import Header from "./components/header/Header";
+import Stage from "./components/stage/Stage";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header />
       <Stage />
     </div>
   );
